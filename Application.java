@@ -161,6 +161,7 @@ public class Application {
 				}
 			} else {
 				System.out.println("you choose to : “Delete an existing Song” info");
+				System.out.println("Enter the id to delete : ");
 				int delId = sc.nextInt();
 				Iterator<SongDetails> it = arraylist.iterator();
 				while (it.hasNext()) {
@@ -173,6 +174,7 @@ public class Application {
 					
 				}
 				System.out.println("Current music list after Deleted");
+				arrangeId(arraylist);
 				for (SongDetails songDetails : arraylist) {
 					System.out.println(songDetails);
 				}
